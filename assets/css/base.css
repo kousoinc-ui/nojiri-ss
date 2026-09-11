@@ -66,6 +66,12 @@ h3{
     font-size:var(--fs-h3);
 }
 
+h2{
+
+    text-wrap:balance;
+
+}
+
 p{
 
     max-width:42rem;
@@ -87,11 +93,11 @@ section{
 
     opacity:0;
 
-    transform:translateY(40px);
+    transform:translateY(28px);
 
     transition:
-        opacity .9s var(--ease),
-        transform .9s var(--ease);
+        opacity .75s var(--ease),
+        transform .75s var(--ease);
 
 }
 

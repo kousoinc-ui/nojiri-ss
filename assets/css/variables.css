@@ -3,14 +3,14 @@
   /* ========= Colors ========= */
 
   --color-white: #ffffff;
-  --color-background: #F8F8F6;
+  --color-background: #F3F1EB;
 
-  --color-text: #111111;
-  --color-text-light: #555555;
+  --color-text: #171817;
+  --color-text-light: #555852;
 
-  --color-line: #E8E8E8;
+  --color-line: #DEDCD4;
 
-  --color-accent: #B08D57;
+  --color-accent: #A77837;
 
   --color-overlay: rgba(0, 0, 0, .38);
 
@@ -65,7 +65,7 @@
   --space-lg: 6rem;
   --space-xl: 8rem;
   --space-2xl: 12rem;
-  --space-section: 15rem;
+  --space-section: clamp(8rem, 10vw, 11rem);
 
 
   /* ========= Radius ========= */

@@ -89,7 +89,7 @@
 
     font-family:var(--font-serif);
 
-    font-size:1.05rem;
+    font-size:1.1rem;
 
     letter-spacing:.18em;
 
@@ -115,7 +115,7 @@
 
     align-items:center;
 
-    gap:56px;
+    gap:clamp(20px, 2.4vw, 40px);
 
 }
 
@@ -123,9 +123,9 @@
 
     position:relative;
 
-    font-size:.92rem;
+    font-size:.82rem;
 
-    letter-spacing:.08em;
+    letter-spacing:.07em;
 
     transition:color .3s;
 
@@ -164,7 +164,51 @@
 
 .contact-link{
 
-    color:var(--color-accent);
+    display:inline-flex;
+
+    align-items:center;
+
+    min-height:44px;
+
+    padding:0 20px;
+
+    color:#16130d;
+
+    background-color:transparent;
+
+    background-image:url("../images/brass-button-plate.png");
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:100% 100%;
+
+    border:1px solid transparent;
+
+    font-weight:500;
+
+    filter:saturate(.84);
+
+    text-shadow:0 1px rgba(255,255,255,.24);
+
+}
+
+.contact-link::after{
+
+    display:none;
+
+}
+
+.contact-link:hover{
+
+    color:var(--color-text);
+
+    background-color:transparent;
+
+    background-image:url("../images/brass-button-plate.png");
+
+    filter:saturate(1) brightness(1.08);
 
 }
 
@@ -317,6 +361,14 @@ body.menu-open .menu-button span:nth-child(2){
         font-size:1.15rem;
 
         letter-spacing:.16em;
+
+    }
+
+    .global-nav .contact-link{
+
+        padding:12px 28px;
+
+        color:#16130d;
 
     }
 
