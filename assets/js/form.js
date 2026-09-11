@@ -3,8 +3,7 @@
    フォーム送信サービス（Formspree等）を導入したら
    このファイルごと差し替える。 */
 
-/* 会社の受信用アドレスが決まったらここを書き換える */
-const CONTACT_EMAIL = "info@example.jp";
+const CONTACT_EMAIL = "info.nojiri.seisakusho@gmail.com";
 
 function initContactForm() {
 
@@ -20,10 +19,11 @@ function initContactForm() {
             (form.elements[name]?.value || "").trim();
 
         const body = [
+            "ご相談の種類: " + value("type"),
             "お名前: " + value("name"),
             "会社名: " + (value("company") || "（未記入）"),
             "メールアドレス: " + value("email"),
-            "電話番号: " + (value("tel") || "（未記入）"),
+            "電話番号: " + (value("phone") || "（未記入）"),
             "",
             "ご相談内容:",
             value("message"),
@@ -31,7 +31,7 @@ function initContactForm() {
 
         const url =
             "mailto:" + CONTACT_EMAIL +
-            "?subject=" + encodeURIComponent("【HP】お問い合わせ") +
+            "?subject=" + encodeURIComponent("【HP】" + value("type")) +
             "&body=" + encodeURIComponent(body);
 
         window.location.href = url;

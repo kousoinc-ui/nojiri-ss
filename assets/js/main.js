@@ -6,9 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initAnimation();
 
+    initDecorativeMotion();
+
     initHeroVideo();
 
     initScrollVideos();
+
+    initFacilityTabs();
 
     initContactForm();
 
